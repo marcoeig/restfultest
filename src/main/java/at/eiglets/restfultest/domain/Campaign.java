@@ -4,14 +4,12 @@ import javax.validation.constraints.Min;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.joda.time.DateMidnight;
-import org.springframework.format.annotation.DateTimeFormat;
 
 @XmlRootElement
 public class Campaign {
 
 	private String name;
 		
-	@DateTimeFormat(pattern="dd.MM.yyyy")
 	private DateMidnight from;
 	private DateMidnight until;
 	
@@ -30,12 +28,10 @@ public class Campaign {
 		return from;
 	}
 	
-	@DateTimeFormat(pattern="dd.MM.yyyy")
 	public void setFrom(DateMidnight from) {
 		this.from = from;
 	}
 
-	@DateTimeFormat(pattern="dd.MM.yyyy")
 	public DateMidnight getUntil() {
 		return until;
 	}

@@ -17,5 +17,4 @@ public class CampaignService {
 		return campaign;
 	}
 	
-	
 }

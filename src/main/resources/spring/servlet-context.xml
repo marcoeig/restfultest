@@ -18,6 +18,4 @@
 	<annotation-driven />
 	<context:component-scan base-package="at.eiglets.restfultest.web" />
 	
-	<beans:bean class="at.eiglets.restfultest.web.MappingJacksonHttpMessageConverterProcessor" />
-	
 </beans:beans>

@@ -1,7 +1,6 @@
 package at.eiglets.restfultest.web;
 
 import javax.validation.Valid;
-import javax.validation.Validator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,9 +19,6 @@ public class CampaignRestController {
 
 	@Autowired
 	private CampaignService service;
-
-	@Autowired
-	private Validator validator;
 	
 	@RequestMapping(value = "/campaigns", method = RequestMethod.GET)
 	@ResponseBody
